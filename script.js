@@ -44,13 +44,12 @@ console.log(myNewString);
 let myStringer = "JS is challenging";
 let myNumber = 17;
 let myArray = ["1", "2", "3"];
-let myObject;
-myObject = {name: "Alek", age: 30};
+let myObject = {name: "Alek", gender: "male"};
 
 console.log('The value of my variable myString is: ' + myStringer);
 console.log('The value of my variable myNumber is: ' + myNumber);
 console.log('The value of my variable myArray is: ' + myArray);
-console.log('The value of my variable myObject is: ' + myObject);
+console.log('The value of my variable myObject is: ', myObject);
 
 console.log("The type of myStringer is a string, the type of myNumber is a number, the type of myArray is an array, the type of myObject is an object");
 
@@ -60,5 +59,43 @@ console.log(typeof myArray);
 console.log(typeof myObject);
 
 
+if (typeof myStringer === typeof myNumber) {
+    console.log("The SAME TYPE");
+}
+else {
+    console.log("NOT the SAME TYPE")
+}
 
 
+if (typeof myStringer === typeof myArray) {
+    console.log("The SAME TYPE");
+}
+else {
+    console.log("NOT the SAME TYPE");
+}
+
+
+if (typeof myStringer === typeof myObject) {
+    console.log("The SAME TYPE");
+}
+else {
+    console.log("NOT the SAME TYPE");
+}
+
+// 9
+x = 1
+
+console.log("7 % 3 = 1, because 7 = 3*2+1");
+console.log("10 % 4 = 2, because 10 = 4*2+2");
+console.log("39 % 6 = 3, because 39 = 6*6+3");
+
+
+//10
+let myFinalArray = ["Alek", 30];
+
+if (6/0 === 10/0) {
+    console.log("I can compare");
+}
+else {
+    console.log("I cannot compare");
+}
